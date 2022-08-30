@@ -1,5 +1,6 @@
 import React,{ Component } from 'react'
 
+
 class Form extends Component{
 constructor(props){
 	super(props)
@@ -149,6 +150,42 @@ render(){
 				value={this.state.color}
 				onChange={this.handleChange}
 			/>
+		</div>
+		<div>
+			<label for="favcolor">Select your favorite color:</label>
+ 			<input 
+				type="color" 
+				id="favcolor" 
+				name="favcolor"
+			/>
+		</div>
+		<div>
+			<label for="birthday">Your Birthday:</label>
+  			<input 
+				type="date" 
+				id="birthday" 
+				name="birthday"
+			/>
+		</div>
+		<div>
+		<label for="quantity">Quantity (between 1 and 100):</label>
+  		<input 
+			type="number" 
+			id="quantity" 
+			name="quantity" 
+			min="1" 
+			max="100"
+		/>
+		</div>
+		<div>
+		<label for="vol">Volume :</label>
+  		<input 
+			type="range" 
+			id="vol" 
+			name="vol" 
+			min="0" 
+			max="50"
+		/>
 		</div>
 
 
